@@ -797,6 +797,7 @@ def ReadComments(input_files, input_format, font_size=25.0, progress_callback=No
             progress_callback(idx, len(input_files))
         with ConvertToFile(i, 'r', encoding='utf-8', errors='replace') as f:
             s = f.read()
+            s = s.replace('\ufeff', '')  # remove utf-8 BOM
             str_io = io.StringIO(s)
             if input_format == 'autodetect':
                 CommentProcessor = GetCommentProcessor(str_io)
