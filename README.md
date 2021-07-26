@@ -1,3 +1,14 @@
+# Danmaku2ASS (By Convictss)
+#### 1. 修复带BOM头的xml弹幕转换错误的bug
+#### 2. 生成国际化文件，并指定默认语言为`zh_CN`（中文），可直接程序中将`zh_CN`改为其它语言
+- zh_CH: 简体中文
+- zh_TW: 繁体中文
+- en: 英文
+- ja: 日本语
+
+<br><br>
+---
+
 Danmaku2ASS
 ===========
 
